@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold; 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GilroyHeavy';
+    src: url('/fonts/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: bold; 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GilroyRegular';
+    src: url('/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+}
+
+body {
+    font-family: 'GilroyRegular', sans-serif!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'GilroyBold', serif; 
+    font-weight: bold;
+}
+
+p, li{
+    font-size: 1.2em;
+    line-height: 30px;
+}
+.bg-intro{
+    background-image: url(../images/intro.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row-intro{
+    height: 800px;
+    position: relative;
+}
+.row-intro .logo{
+    position: absolute;
+    max-width: 400px;
+    height: auto;
+    left: 50%;
+    top:15%;
+    transform: translate(-50%, -50%);
+}
+.title-intro{
+    color:#a87519;
+}
+.brown-color{
+    color: #6d5819;
+}
+.morebold{
+    font-weight: bolder;
+    font-family: 'GilroyHeavy', serif; 
+}
+.bg-subtitle{
+    background-color: #6d5819;
+    color:#fff;
+    padding: 2px 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+.row-text-long{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.row-text-long img{
+    max-width: 450px;
+    width: 100%;
+}
+.text-cover{
+    border: 3px solid #a87519;
+    padding: 40px;
+    margin: 60px 0;
+    position: relative;
+}
+.circles{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid #a87519;
+    border-right: 3px solid #a87519;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid #fff;
+    border-top-right-radius: 40px;
+}
+.circle1{
+    left: -3px;
+    top:-3px;
+    transform: rotate(90deg);
+}
+.circle2{
+    right: -3px;
+    top:-3px;
+    transform: rotate(180deg);
+}
+.circle3{
+    right: -3px;
+    bottom:-3px;
+    transform: rotate(270deg);
+}
+.circle4{
+    left: -3px;
+    bottom:-3px;
+    transform: rotate(360deg);
+}
+.bg-members{
+    border-top: 10px solid #a87519;
+    border-bottom: 10px solid #a87519;
+    background-image: url(../images/members.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row-members{
+    height: 600px;
+    position: relative;
+}
+
+.bg-list{
+    background-image: url(../images/bglist.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.members-list h2{
+    color: white;
+}
+.members-list p{
+    color:#f0cf7e;
+}
+.members-images p{
+    text-align: center;
+}
+.members-images img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.bg-half{
+    background: linear-gradient(to right, #a87519, #f9c442);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 180px;
+    position: absolute;
+}
+.teams{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.teams img{
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+}
+
+.work-plan{
+    background-image: url(../images/bg-logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 80px;
+    padding: 0 20px;
+}
+
+.work-plan h1{
+    letter-spacing: 15px;
+    font-family: 'GilroyHeavy', serif; 
+}
+.work-plan h1 span{
+    background-color: #6d5819;
+    color: #fff;
+    padding: 0 10px;
+    text-align: center;
+}
+.work-plan li{
+    color: #333;
+    font-family: 'GilroyMedium', serif; 
+}
+.work-plan p,
+.work-plan li{
+    line-height: 40px;
+}
+.bg-footer{
+    background-image: url(../images/bgfooter.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 10px solid #a87519;
+    margin-bottom: 20px;
+}
+
+.row-footer h2{
+    color: #f9c442;
+}
+.row-footer p{
+    color: #fff;
+}
+.footer-title{
+    font-size: 2em;
+    background: linear-gradient(to right, #a87519, #f9c442);
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-family: 'GilroyBold', serif; 
+}
+
+@media only screen and (max-width: 480px) {
+    p, li{
+        font-size: 1.1em!important;
+        line-height: 30px!important;
+    }
+    .row-members{
+        height: 200px;
+    }
+    .footer-title{
+        font: 1.2em sans-serif;
+        font-weight: bold;
+    }
+}
