@@ -33,13 +33,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, li{
-    font-size: 1.2em;
-    line-height: 30px;
+    font-size: 1.3em;
+    line-height: 28px;
 }
 .bg-intro{
     background-image: url(../images/intro.jpg);
     background-position: center;
     background-size: cover;
+    border-bottom: 16px solid #a87519;
 }
 
 .row-intro{
@@ -70,6 +71,7 @@ p, li{
     padding: 2px 10px;
     font-size: 1.2em;
     border-radius: 10px;
+    font-family: 'GilroyBold', serif; 
 }
 .row-text-long{
     max-width: 1000px;
@@ -84,6 +86,7 @@ p, li{
     padding: 40px;
     margin: 60px 0;
     position: relative;
+    text-align: justify;
 }
 .circles{
     position: absolute;
@@ -135,9 +138,13 @@ p, li{
 }
 .members-list h2{
     color: white;
+    font-size: 1.6em;
+    margin-bottom:0!important;
 }
 .members-list p{
     color:#f0cf7e;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 .members-images p{
     text-align: center;
@@ -146,7 +153,6 @@ p, li{
     max-width: 300px;
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
 }
 .bg-half{
     background: linear-gradient(to right, #a87519, #f9c442);
@@ -191,9 +197,39 @@ p, li{
     color: #333;
     font-family: 'GilroyMedium', serif; 
 }
+.work-plan p{
+    text-align: justify;
+}
 .work-plan p,
 .work-plan li{
     line-height: 40px;
+}
+.custom-list {
+    list-style: none; /* Elimina el estilo predeterminado de la lista */
+    counter-reset: item; /* Resetea el contador para comenzar desde 1 */
+}
+
+.custom-list li {
+    counter-increment: item; /* Incrementa el contador en cada <li> */
+    position: relative;
+    padding-left: 40px; /* Espacio para el círculo */
+    margin-bottom: 10px;
+}
+
+.custom-list li::before {
+    content: counter(item); /* Muestra el número */
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%; /* Hace que el borde sea circular */
+    background-color: #af2525;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9em;
 }
 .bg-footer{
     background-image: url(../images/bgfooter.jpg);
